@@ -1,0 +1,266 @@
+{% load static %}
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="​Get in touch">
+    <meta name="description" content="">
+    <title>Registration_form</title>
+    <link rel="stylesheet" href="{%static 'nicepage.css'%}" media="screen">
+    <link rel="stylesheet" href="{%static 'Registration_form.css' %}" media="screen">
+    <link rel="stylesheet" href="{%static 'custom.css' %}" media="screen">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script class="u-script" type="text/javascript" src="{%static 'jquery.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{%static 'nicepage.js' %}" defer=""></script>
+    <meta name="generator" content="Nicepage 5.16.3, nicepage.com">
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+ 
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Gym_registration_form"
+}</script>
+
+
+
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Registration_form">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body class="u-body u-xl-mode" data-lang="en">
+
+    {% if messages %}
+      <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    <section class="u-align-center u-clearfix u-custom-color-2 u-section-1" id="carousel_3748">
+      <div class="u-clearfix u-sheet u-valign-bottom u-sheet-1">
+        <h2 class="u-custom-font u-font-montserrat u-text u-text-default u-text-palette-4-base u-text-1">Register Member</h2>
+        <a href="{%url 'home' %}" class="u-border-2 u-border-grey-75 u-btn u-button-style u-hover-grey-75 u-none u-text-grey-15 u-btn-1"><span class="u-file-icon u-icon u-text-grey-15"><img src="{%static 'images/1946488-4a8dec49.png' %}" alt=""></span>&nbsp;Home
+        </a>
+        <div class="u-align-center u-container-style u-custom-color-2 u-expanded-width-xs u-group u-radius-50 u-shape-round u-group-1">
+          <div class="u-container-layout u-valign-bottom u-container-layout-1">
+            <div class="u-form u-form-1">
+              <form method="POST" class="u-clearfix u-form-spacing-28 u-form-vertical u-inner-form" name="form" style="padding: 0px;">
+                {% csrf_token %}
+                <div class="u-form-checkbox u-form-group u-form-input-layout-horizontal u-label-top u-form-group-1">
+                  <input type="checkbox" id="checkbox-9278" name="check_personal_trainer" class="u-active-custom-color-6 u-border-2 u-border-grey-75 u-border-hover-white u-field-input" value="1">
+                  <label for="checkbox-9278" class="u-field-label u-text-palette-4-base" style="font-weight: 700;">Need Personal Trainer? (Check if "YES")</label>
+                </div>
+                <div class="u-form-group u-form-name u-form-partition-factor-2 u-label-top">
+                  <label for="name-c6a3" class="u-label u-text-custom-color-4 u-label-1">Name</label>
+                  <input type="text" placeholder="Enter your Name" id="name-c6a3" name="name" class="u-border-grey-75 u-custom-color-2 u-input u-input-rectangle u-radius-6 u-text-grey-5 u-input-1" required="">
+                </div>
+                <div class="u-form-email u-form-group u-form-partition-factor-2 u-label-top">
+                  <label for="email-c6a3" class="u-label u-text-custom-color-4 u-label-2">Email</label>
+                  <input type="email" placeholder="Enter a valid email address" id="email-c6a3" name="email" class="u-border-grey-75 u-custom-color-2 u-input u-input-rectangle u-radius-6 u-text-grey-5 u-input-2" required="">
+                </div>
+                <div class="u-form-address u-form-group u-form-partition-factor-2 u-label-top u-form-group-4">
+                  <label for="address-be2d" class="u-label u-text-custom-color-4 u-label-3">Address</label>
+                  <input type="text" placeholder="Enter your address" id="address-be2d" name="address" class="u-border-grey-75 u-custom-color-2 u-input u-input-rectangle u-radius-6 u-text-grey-5 u-input-3" required="">
+                </div>
+                <div class="u-form-group u-form-partition-factor-2 u-form-phone u-label-top u-form-group-5">
+                  <label for="phone-84d9" class="u-label u-text-custom-color-4 u-label-4">Mobile no</label>
+                  <input type="text" placeholder="Enter your mobile no" id="phone-84d9" name="mobile" class="u-border-grey-75 u-custom-color-2 u-input u-input-rectangle u-radius-6 u-text-grey-5 u-input-4" required="" maxlength="10">
+                </div>
+                <div class="u-form-group u-form-number u-form-number-layout-number u-form-partition-factor-2 u-label-top u-form-group-6">
+                  <label for="number-56dd" class="u-label u-text-custom-color-4 u-label-5">Height (cm)</label>
+                  <div class="u-input-row" data-value="0">
+                    <input value="0" min="0" max="300" step="1" type="number" placeholder="" id="number-56dd" name="height" class="u-border-1 u-border-grey-75 u-custom-color-2 u-input u-input-rectangle u-number u-radius-6 u-text-grey-5 u-input-5">
+                  </div>
+                </div>
+                <div class="u-form-group u-form-number u-form-number-layout-number u-form-partition-factor-2 u-label-top u-form-group-7">
+                  <label for="number-8fa0" class="u-label u-text-custom-color-4 u-label-6">Weight (kg)</label>
+                  <div class="u-input-row" data-value="0">
+                    <input value="0" min="0" max="200" step="0.1" type="number" placeholder="" id="number-8fa0" name="weight" class="u-border-1 u-border-grey-75 u-custom-color-2 u-input u-input-rectangle u-radius-6 u-text-grey-5 u-input-6">
+                  </div>
+                </div>
+                <div class="u-form-date u-form-group u-form-partition-factor-2 u-label-top u-form-group-8">
+                  <label for="date-4da0" class="u-label u-text-custom-color-4 u-label-7">Date of Birth</label>
+                  <input type="text" readonly="readonly" placeholder="YYYY/MM/DD" id="date-4da0" name="dob" class="u-border-grey-75 u-custom-color-2 u-input u-input-rectangle u-radius-6 u-text-grey-5 u-input-7" required="" data-date-format="yyyy-mm-dd">
+                </div>
+                <div class="u-form-group u-form-partition-factor-2 u-form-select u-label-top u-form-group-9">
+                  <label for="select-0e23" class="u-label u-text-custom-color-4 u-label-8">Gender</label>
+                  <div class="u-form-select-wrapper">
+                    <select id="select-0e23" name="gender" class="u-border-grey-75 u-custom-color-2 u-input u-input-rectangle u-radius-6 u-text-grey-5 u-input-8" required="required">
+                      <option value="male" data-calc="male">Male</option>
+                      <option value="female" data-calc="female">Female</option>
+                    </select>
+                    <svg class="u-caret u-caret-svg u-text-grey-5" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+                  </div>
+                </div>
+                <div class="u-form-group u-form-partition-factor-2 u-form-select u-label-top u-form-group-10">
+                  <label for="select-ac2f" class="u-label u-text-custom-color-4 u-label-9">Purpose to join gym</label>
+                  <div class="u-form-select-wrapper">
+                    <select id="select-ac2f" name="purpose" class="u-border-grey-75 u-custom-color-2 u-input u-input-rectangle u-radius-6 u-text-grey-5 u-input-9" required="required">
+                      <option value="Weight gain" data-calc="weight_gain" selected="selected">Weight Gain</option>
+                      <option value="Weight loss" data-calc="weight_loss">Weight Loss</option>
+                      <option value="Muscle Building" data-calc="muscle_building">Muscle Building</option>
+                    </select>
+                    <svg class="u-caret u-caret-svg u-text-grey-5" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+                  </div>
+                </div>
+                <div class="u-form-group u-form-partition-factor-2 u-form-select u-label-top u-form-group-11">
+                  <label for="select-32c1" class="u-label u-text-custom-color-4 u-label-10">Membership Plan</label>
+                  <div class="u-form-select-wrapper">
+                    <select id="select-32c1" name="membership_plan" class="u-border-grey-75 u-custom-color-2 u-input u-input-rectangle u-radius-6 u-text-grey-5 u-input-10" required="required">
+                        <option value="monthly" data-calc={{plan_dict.monthly}}>Monthly ₹{{plan_dict.monthly}}</option>
+                        <option value="three_months" data-calc={{plan_dict.three_months}}>Three Months ₹{{plan_dict.three_months}}</option>
+                        <option value="six_months" data-calc={{plan_dict.six_months}}>Six Months ₹{{plan_dict.six_months}}</option>
+                        <option value="one_year" data-calc={{plan_dict.one_year}}>One Year ₹{{plan_dict.one_year}}</option> 
+                    </select>
+                    <svg class="u-caret u-caret-svg u-text-grey-5" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+                  </div>
+                </div>
+                <div class="u-form-group u-form-number u-form-number-layout-number u-form-partition-factor-2 u-label-top u-form-group-12">
+                  <label for="number-9e82" class="u-label u-text-custom-color-4 u-label-11">Fees Paid</label>
+                  <div class="u-input-row" data-value="0">
+                    <input value="0" min="0" max="10000" step="10" type="number" placeholder="" id="number-9e82" name="fees_paid" class="u-border-1 u-border-grey-75 u-custom-color-2 u-input u-input-rectangle u-radius-6 u-text-grey-5 u-input-11">
+                  </div>
+                </div>
+                <div class="u-form-date u-form-group u-form-partition-factor-2 u-label-top u-form-group-13">
+                  <label for="date-a01d" class="u-label u-text-custom-color-4 u-label-12">Last Fees Paid Date</label>
+                  <input type="text" readonly="readonly" placeholder="YYYY/MM/DD" id="date-a01d" name="last_paid_date" class="u-border-grey-75 u-custom-color-2 u-input u-input-rectangle u-radius-6 u-text-grey-5 u-input-12" required="" data-date-format="yyyy-mm-dd">
+                </div>
+                <div class="u-form-group u-form-partition-factor-2 u-form-select u-label-top u-form-group-14">
+                  <label for="select-4281" class="u-label u-text-custom-color-4 u-label-13">Batch Time</label>
+                  <div class="u-form-select-wrapper">
+                    <select id="select-4281" name="batch_time" class="u-border-grey-75 u-custom-color-2 u-input u-input-rectangle u-radius-6 u-text-grey-5 u-input-13" required="required">
+                      <option data-calc="Morning" value="morning">Morning</option>
+                      <option data-calc="Afternoon" value="afternoon">Afternoon</option>
+                      <option data-calc="Evening" value="evening">Evening</option>
+                    </select>
+                    <svg class="u-caret u-caret-svg u-text-grey-5" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+                  </div>
+                </div>
+                <div class="u-form-group u-form-input-layout-horizontal u-form-partition-factor-2 u-form-select u-label-top u-form-group-15" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;check_personal_trainer&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:1}]">
+                  <label for="select-fc1d" class="u-label u-text-custom-color-4 u-label-14">Select Personal Trainer</label>
+                  <div class="u-form-select-wrapper">
+                    <select id="select-fc1d" name="personal_trainer" class="u-border-grey-75 u-custom-color-2 u-input u-input-rectangle u-text-grey-5 u-input-14">
+                      {% comment %} <option value="aditya" data-calc="aditya">Aditya Sir</option>
+                      <option value="rohit" data-calc="rohit">Rohit Sir</option> {% endcomment %}
+                      {% for trainer in trainer_dict.trainer_list %}
+                        <option value="{{trainer}}" data-calc="{{trainer}}">{{trainer}}</option>
+                      {% endfor %}
+                    </select>
+                    <svg class="u-caret u-caret-svg u-text-grey-5" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+                  </div>
+                </div>
+                <div class="u-form-date u-form-group u-form-input-layout-horizontal u-form-partition-factor-2 u-label-top u-form-group-16">
+                  <label for="date-5f74" class="u-label u-text-custom-color-4 u-label-15">Date of Join</label>
+                  <input type="text" readonly="readonly" placeholder="YYYY/MM/DD" id="date-5f74" name="date_of_join" class="u-border-1 u-border-grey-75 u-custom-color-2 u-input u-input-rectangle u-radius-6" required="" data-date-format="yyyy-mm-dd">
+                </div>
+                <div class="u-form-calc u-form-group u-form-partition-factor-2 u-label-top u-form-group-17">
+                  <label for="calc-bbbe" class="u-label u-text-custom-color-4 u-label-16">Fees Remaining</label>
+                  <input type="hidden" placeholder="1200" id="calc-bbbe" name="fees_remaining" class="u-calc-input" value="">
+                  <div class="u-form-calc-text"><span class="u-form-calc-before"></span><span class="u-form-calc-value" data-expression="membership_plan - fees_paid">Calculating...</span><span class="u-form-calc-after"></span></div>
+                </div>
+                {% comment %} <button type="submit">Submit Button</button> {% endcomment %}
+                <div class="u-align-center u-form-group u-form-submit u-label-top">
+                  <label class="u-form-control-hidden u-label u-text-custom-color-4 u-label-17"></label>
+                  <input type="submit" value="submit" class="u-form-control-hidden">
+                  <button type="submit" class="u-border-2 u-border-grey-75 u-btn u-btn-submit u-button-style u-hover-grey-75 u-none u-text-grey-15 u-btn-2 " style="color:cyan;" onclick="showAlert()">Register</button>
+                  <div class="u-btn-submit-container">
+                    
+
+                    {% comment %} <a type="submit" class="u-border-2 u-border-grey-75 u-btn u-btn-submit u-button-style u-hover-grey-75 u-none u-text-grey-15 u-btn-2">Submit</a> {% endcomment %}
+                    {% comment %} <input type="submit" class="u-border-2 u-border-grey-75 u-btn u-btn-submit u-button-style u-hover-grey-75 u-none u-text-grey-15 u-btn-2"> {% endcomment %}
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Button trigger modal -->
+      {% comment %} <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button> {% endcomment %}
+
+      <!-- Modal -->
+      <div class="modal fade custom-modal1" id="exampleModal" tabindex="-1" aria-la`belledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="background-color:black; border:1px solid #a1a1a1;">
+          <div class="modal-content" style="background-color:black;">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 mt-1 mb-1" id="exampleModalLabel" style="color:white;">Success...</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body mb-1 mt-1">
+              <p style="color:white;">Member registered successfully!!!</p>
+            </div>
+            <div class="modal-footer d-grid gap-2">
+              <button type="submit" class="d-grid gap-2 btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const checkbox = document.getElementById('checkbox-9278');
+          const dropdown = document.getElementById('select-32c1');
+          const option1 = dropdown.querySelector('option[value="monthly"]');
+          const option2 = dropdown.querySelector('option[value="three_months"]'); 
+          const option3 = dropdown.querySelector('option[value="six_months"]'); 
+          const option4 = dropdown.querySelector('option[value="one_year"]'); 
+    
+          checkbox.addEventListener('change', function() {
+              if (checkbox.checked) {
+                  option1.value = 'monthly';
+                  option1.setAttribute('data-calc', {{pt_plan_dict.monthly}})
+                  option1.textContent = 'Monthly ₹{{pt_plan_dict.monthly}}';
+    
+                  option2.value = 'three_months';
+                  option2.setAttribute('data-calc', {{pt_plan_dict.three_months}})
+                  option2.textContent = 'Three Months ₹{{pt_plan_dict.three_months}}';
+
+                  option3.value = 'six_months';
+                  option3.setAttribute('data-calc', {{pt_plan_dict.six_months}})
+                  option3.textContent = 'Not Available';
+    
+                  option4.value = 'one_year';
+                  option4.setAttribute('data-calc', {{pt_plan_dict.one_year}})
+                  option4.textContent = 'Not Available';
+              } 
+              else{
+                option1.value = 'monthly';
+                option1.setAttribute('data-calc', {{plan_dict.monthly}})
+                  option1.textContent = 'Monthly ₹{{plan_dict.monthly}}';
+    
+                  option2.value = 'three_months';
+                  option2.setAttribute('data-calc', {{plan_dict.three_months}})
+                  option2.textContent = 'Three Months ₹{{plan_dict.three_months}}';
+
+                  option3.value = 'six_months';
+                  option3.setAttribute('data-calc', {{plan_dict.six_months}})
+                  option3.textContent = 'Six Months ₹{{plan_dict.six_months}}';
+    
+                  option4.value = 'one_year';
+                  option4.setAttribute('data-calc', {{plan_dict.one_year}})
+                  option4.textContent = 'One Year ₹{{plan_dict.one_year}}';
+              }
+          });
+      });
+    </script>
+    <script>
+      function showAlert() {
+          alert('Member registered successfully!!!');
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>   
+   </body>
+</html>

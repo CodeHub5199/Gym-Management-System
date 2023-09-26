@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Destiny Fitness Center">
+    <meta name="description" content="">
+    <title>Home</title>
+    <link rel="stylesheet" href="{%static 'nicepage.css' %}" media="screen">
+<link rel="stylesheet" href="{%static 'Home.css' %}" media="screen">
+    <script class="u-script" type="text/javascript" src="{%static 'jquery.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{%static 'nicepage.js' %}" defer=""></script>
+    <meta name="generator" content="Nicepage 5.16.3, nicepage.com">
+	<meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Gym_registration_form"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body class="u-body u-xl-mode" data-lang="en">
+    <section class="u-align-center u-clearfix u-custom-color-2 u-section-1" id="carousel_4839">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-default u-text-palette-1-light-2 u-text-variant u-text-1">Date: {{todays_date}}</p>
+        <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-image u-image-round u-layout-cell u-radius-20 u-shape-rectangle u-size-30-lg u-size-30-xl u-size-60-md u-size-60-sm u-size-60-xs u-image-1" data-image-width="1280" data-image-height="853" data-animation-name="customAnimationIn" data-animation-duration="1500">
+                <div class="u-container-layout u-container-layout-1"></div>
+              </div>
+              <div class="u-container-style u-layout-cell u-shape-rectangle u-size-30-lg u-size-30-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500" data-animation-out="1">
+                <div class="u-container-layout u-valign-top u-container-layout-2">
+                  <h2 class="u-align-center u-custom-font u-text u-text-font u-text-palette-1-base u-text-2">Destiny Fitness Center</h2>
+                  <a href="{%url 'registration' %}" class="u-align-center u-btn u-btn-round u-button-style u-custom-color-3 u-hover-feature u-hover-palette-1-light-1 u-radius-20 u-btn-1"><span class="u-file-icon u-icon u-text-white u-icon-1"><img src="{%static 'images/9428917-49eb6855.png' %}" alt=""></span>&nbsp;Register Member
+                  </a>
+                  <a href="{%url 'manage_members' %}" class="u-align-center u-btn u-btn-round u-button-style u-hover-feature u-hover-palette-1-light-1 u-palette-1-base u-radius-20 u-btn-2"><span class="u-file-icon u-icon u-text-white u-icon-2"><img src="{%static 'images/11476392-ab7b9a0e.png' %}" alt=""></span>&nbsp;Manage Members
+                  </a>
+                  <a href="{%url 'update_fees' %}" class="u-align-center u-btn u-btn-round u-button-style u-hover-feature u-hover-palette-1-light-1 u-palette-1-base u-radius-20 u-btn-3"><span class="u-file-icon u-icon u-text-white u-icon-3"><img src="{%static 'images/2546743-65c8d8b3.png' %}" alt=""></span>&nbsp;&nbsp;UP<span class="u-icon"></span>date Fees
+                  </a>
+                  <a href="{%url 'manage_trainer' %}" class="u-align-center u-btn u-btn-round u-button-style u-hover-feature u-hover-palette-1-light-1 u-palette-1-base u-radius-20 u-btn-4"><span class="u-file-icon u-icon u-text-white u-icon-5"><img src="{%static 'images/5075239-3ac50327.png' %}" alt=""></span>&nbsp;Manage trainers
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </section>
+  </body>
+</html>

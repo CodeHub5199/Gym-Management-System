@@ -1,0 +1,306 @@
+{% load static %}
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Atharv Bhasme, Atharv Bhasme, Atharv Bhasme">
+    <meta name="description" content="">
+    <title>Manage_members</title>
+    <link rel="stylesheet" href="{%static 'nicepage.css' %}" media="screen">
+    <link rel="stylesheet" href="{%static 'Manage_members.css' %}" media="screen">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script class="u-script" type="text/javascript" src="{%static 'jquery.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{%static 'nicepage.js' %}" defer=""></script>
+    <meta name="generator" content="Nicepage 5.16.3, nicepage.com">
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Gym_registration_form"
+}
+
+<style>
+  .form-control {
+      background-color: black; /* Replace with your desired background color */
+  }
+
+  #navBarSearchForm {
+  width: 100px; /* Change this value to your desired width */
+}
+</style>
+
+
+</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Manage_members">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body class="u-body u-xl-mode" data-lang="en">
+
+     <header class="u-custom-color-2 u-header u-header" id="sec-514c" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-sheet-1"><span class="u-file-icon u-icon u-icon-1"><img src="{%static 'images/7922188.png' %}" alt=""></span>
+        <nav data-position="" class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1.5rem; letter-spacing: 0px; font-weight: 700;">
+            <a class="u-button-style u-custom-active-border-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link" href="#" style="padding: 2px 0px; font-size: calc(1em + 4px);">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect></g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-spacing-2 u-unstyled u-nav-1" style="margin-right:-50px">
+              <form method="get" class="d-flex u-form u-form-1 pt-3" role="search" id="navBarSearchForm">
+                <input class="form-control me-2 mr-sm-4" type="search" style="width:450px" placeholder="Search member here..." aria-label="Search" name="search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </ul>
+            <ul class="u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-hover-grey-75 u-nav-link u-text-active-grey-15 u-text-grey-15 u-text-hover-grey-15" href="{%url 'home' %}" style="padding: 10px 20px;">Home</a></li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html">Home</a></li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      
+        
+      </div>
+    </header> 
+
+
+
+    {% comment %} <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar scroll</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Link
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Link</a>
+            </li>
+          </ul>
+          <form method="get" class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav> {% endcomment %}
+
+
+
+    <section class="u-align-center u-clearfix u-custom-color-2 u-section-1" id="sec-1c3c">
+      <div class="u-clearfix u-sheet u-sheet-1"><span class="u-file-icon u-icon u-text-custom-color-4 u-icon-1"><img src="{%static 'images/681494-3f52d8b1.png' %}" alt=""></span><span class="u-file-icon u-icon u-text-custom-color-4 u-icon-2"><img src="{%static 'images/681494-3f52d8b1.png' %}" alt=""></span><span class="u-file-icon u-icon u-text-custom-color-4 u-icon-3"><img src="{%static 'images/681494-3f52d8b1.png' %}" alt=""></span>
+        <div class="u-tab-links-align-left u-tabs u-tabs-1">
+          <ul class="u-tab-list u-unstyled" role="tablist">
+            <li class="u-tab-item" role="presentation">
+              <a class="active u-active-grey-15 u-border-2 u-border-grey-75 u-button-style u-tab-link u-text-active-black u-text-grey-25 u-tab-link-1" id="link-tab-fdf6" href="#tab-fdf6" role="tab" aria-controls="tab-fdf6" aria-selected="true">All Memebers</a>
+            </li>
+            <li class="u-tab-item" role="presentation">
+              <a class="u-active-grey-15 u-border-2 u-border-grey-75 u-button-style u-tab-link u-text-active-black u-text-grey-25 u-tab-link-2" id="link-tab-02dd" href="#tab-02dd" role="tab" aria-controls="tab-02dd" aria-selected="false">Unpaid Members</a>
+            </li>
+            <li class="u-tab-item" role="presentation">
+              <a class="u-active-grey-15 u-border-2 u-border-grey-75 u-button-style u-tab-link u-text-active-black u-text-grey-25 u-tab-link-3" id="link-tab-4401" href="#tab-4401" role="tab" aria-controls="tab-4401" aria-selected="false">Upcoming Dues</a>
+            </li>
+          </ul>
+          <div class="u-tab-content">
+            <div class="u-container-style u-custom-color-2 u-tab-active u-tab-pane u-tab-pane-1" id="tab-fdf6" role="tabpanel" aria-labelledby="link-tab-fdf6">
+              <div class="u-container-layout u-container-layout-1">
+                <div class="u-layout-horizontal u-list u-list-1">
+                  <div class="u-repeater u-repeater-1">
+                    {% for i in  member_count%}
+                      <div class="u-align-left u-border-1 u-border-grey-75 u-container-style u-list-item u-radius-20 u-repeater-item u-shape-round">
+                        <div class="u-container-layout u-similar-container u-container-layout-2">
+                          <h2 class="u-subtitle u-text u-text-default u-text-palette-4-light-2 u-text-1">{{i.name}}</h2>
+                          <div class="u-container-style u-group u-shape-rectangle u-group-1">
+                            <div class="u-container-layout u-container-layout-3">
+                              <p class="u-text u-text-custom-color-4 u-text-default u-text-2"><span class="u-file-icon u-icon u-text-custom-color-4"><img src="{%static 'images/3951241-496691f0.png' %}" alt=""></span>&nbsp;Membership Plan: {{i.membership_plan}}&nbsp;
+                              </p>
+                              <p class="u-text u-text-custom-color-4 u-text-default u-text-3"><span class="u-file-icon u-icon u-text-custom-color-4"><img src="{%static 'images/1819984-eeb80167.png' %}" alt=""></span>&nbsp;Total Fees: ₹{{i.total_fees}}&nbsp;
+                              </p>
+                              <p class="u-text u-text-default u-text-palette-2-light-1 u-text-4"><span class="u-file-icon u-icon u-text-palette-2-light-1"><img src="{%static 'images/1333266-934f52eb.png' %}" alt=""></span>&nbsp;Remaining Fees: ₹{{i.fees_remaining}}&nbsp;
+                              </p>
+                              <p class="u-text u-text-default u-text-palette-2-light-1 u-text-5"><span class="u-file-icon u-icon u-text-palette-2-light-1"><img src="{%static 'images/598044-c724e4bb.png' %}" alt=""></span>&nbsp;Fees Due Date: {{i.fees_due_date}}&nbsp;
+                              </p>
+                              <a href="{%url 'show_member' i.id %}" value="show" class="u-align-center u-border-2 u-border-grey-75 u-border-hover-grey-75 u-btn u-button-style u-custom-color-2 u-hover-grey-25 u-text-grey-15 u-text-hover-black u-btn-1">Show details</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    {% endfor %}
+                  </div>
+                  <a class="u-absolute-vcenter u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-1" href="#" role="button">
+                    <span aria-hidden="true">
+                      <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+                    </span>
+                    <span class="sr-only">
+                      <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+                    </span>
+                  </a>
+                  <a class="u-absolute-vcenter u-gallery-nav u-gallery-nav-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-2" href="#" role="button">
+                    <span aria-hidden="true">
+                      <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+                    </span>
+                    <span class="sr-only">
+                      <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="u-list u-list-2">
+                  <div class="u-repeater u-repeater-2">
+                    <div class="u-align-center u-container-style u-list-item u-repeater-item">
+                      <div class="u-container-layout u-similar-container u-container-layout-12">
+                        <h1 class="u-align-center u-text u-text-default u-text-palette-3-base u-title u-text-26" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="1000">Active&nbsp;Members</h1>
+                      </div>
+                    </div>
+                    <div class="u-align-center u-container-style u-list-item u-repeater-item">
+                      <div class="u-container-layout u-similar-container u-container-layout-13">
+                        <h1 class="u-align-center u-text u-text-default u-text-palette-3-base u-title u-text-27" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="1000">{{member_count|length}}</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-align-left u-container-style u-custom-color-2 u-tab-pane u-tab-pane-2" id="tab-02dd" role="tabpanel" aria-labelledby="link-tab-02dd">
+              <div class="u-container-layout u-container-layout-14">
+                <div class="u-table u-table-responsive u-table-1">
+                  <table class="u-table-entity">
+                    <colgroup>
+                      <col width="8.5%">
+                      <col width="22.7%">
+                      <col width="20.5%">
+                      <col width="15.1%">
+                      <col width="16.6%">
+                      <col width="16.6%">
+                    </colgroup>
+                    <thead class="u-grey-70 u-table-header u-text-grey-5 u-table-header-1">
+                      <tr style="height: 53px;">
+                        <th class="u-border-1 u-border-white u-table-cell">ID</th>
+                        <th class="u-border-1 u-border-white u-table-cell">Name</th>
+                        <th class="u-border-1 u-border-white u-table-cell">Membership Plan</th>
+                        <th class="u-border-1 u-border-white u-table-cell">Total Fees</th>
+                        <th class="u-border-1 u-border-white u-table-cell">Remaining Fees</th>
+                        <th class="u-border-1 u-border-white u-table-cell">Fees Due Date</th>
+                      </tr>
+                    </thead>
+                    <tbody class="u-table-body">
+                      {% for mem in unpaid_members%}
+                          <tr style="height: 75px;">
+                            <td class="u-border-1 u-border-grey-30 u-table-cell u-table-cell-7">{{mem.id}}</td>
+                            <td class="u-border-1 u-border-grey-30 u-first-column u-table-cell u-table-cell-8"><a href="{%url 'show_member' mem.id %}">{{mem.name}}</a></td>
+                            <td class="u-border-1 u-border-grey-30 u-table-cell">{{mem.membership_plan}}</td>
+                            <td class="u-border-1 u-border-grey-30 u-table-cell">{{mem.total_fees}}</td>
+                            <td class="u-border-1 u-border-grey-30 u-table-cell">{{mem.fees_remaining}}</td>
+                            <td class="u-border-1 u-border-grey-30 u-table-cell">{{mem.fees_due_date}}</td>
+                          </tr>
+                      {% endfor %}
+                    </tbody>
+                  </table>
+                </div>
+                <div class="u-list u-list-2">
+                  <div class="u-repeater u-repeater-2">
+                    <div class="u-align-center u-container-style u-list-item u-repeater-item">
+                      <div class="u-container-layout u-similar-container u-container-layout-12">
+                        <h1 class="u-align-center u-text u-text-default u-text-palette-3-base u-title u-text-26" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">Unpaid&nbsp;Members</h1>
+                      </div>
+                    </div>
+                    <div class="u-align-center u-container-style u-list-item u-repeater-item">
+                      <div class="u-container-layout u-similar-container u-container-layout-13">
+                        <h1 class="u-align-center u-text u-text-default u-text-palette-3-base u-title u-text-27" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">{{unpaid_members|length}}</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-custom-color-2 u-tab-pane u-tab-pane-3" id="tab-4401" role="tabpanel" aria-labelledby="link-tab-4401">
+              <div class="u-container-layout u-container-layout-15">
+                <div class="u-table u-table-responsive u-table-2">
+                  <table class="u-table-entity">
+                    <colgroup>
+                      <col width="8.8%">
+                      <col width="22.4%">
+                      <col width="19.7%">
+                      <col width="15.9%">
+                      <col width="16.6%">
+                      <col width="16.6%">
+                    </colgroup>
+                    <thead class="u-grey-70 u-table-header u-text-grey-5 u-table-header-2">
+                      <tr style="height: 21px;">
+                        <th class="u-border-1 u-border-white u-table-cell">ID</th>
+                        <th class="u-border-1 u-border-white u-table-cell">Name</th>
+                        <th class="u-border-1 u-border-white u-table-cell">Membership Plan</th>
+                        <th class="u-border-1 u-border-white u-table-cell">Total Fees</th>
+                        <th class="u-border-1 u-border-white u-table-cell">Remaining Fees</th>
+                        <th class="u-border-1 u-border-white u-table-cell">Fees Due Date</th>
+                      </tr>
+                    </thead>
+                    <tbody class="u-table-body">
+                      {% for mem in due_members %}
+                          <tr style="height: 75px;">
+                            <td class="u-border-1 u-border-grey-30 u-table-cell u-table-cell-37">{{mem.id}}</td>
+                            <td class="u-border-1 u-border-grey-30 u-first-column u-table-cell u-table-cell-38"><a href="{%url 'show_member' mem.id %}">{{mem.name}}</a></td>
+                            <td class="u-border-1 u-border-grey-30 u-table-cell">{{mem.membership_plan}}</td>
+                            <td class="u-border-1 u-border-grey-30 u-table-cell">{{mem.total_fees}}</td>
+                            <td class="u-border-1 u-border-grey-30 u-table-cell">{{mem.fees_remaining}}</td>
+                            <td class="u-border-1 u-border-grey-30 u-table-cell">{{mem.fees_due_date}}</td>
+                          </tr>
+                      {% endfor %}
+                    </tbody>
+                  </table>
+                </div>
+                <div class="u-list u-list-2">
+                  <div class="u-repeater u-repeater-2">
+                    <div class="u-align-center u-container-style u-list-item u-repeater-item">
+                      <div class="u-container-layout u-similar-container u-container-layout-12">
+                        <h1 class="u-align-center u-text u-text-default u-text-palette-3-base u-title u-text-26" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">Due&nbsp;Members</h1>
+                      </div>
+                    </div>
+                    <div class="u-align-center u-container-style u-list-item u-repeater-item">
+                      <div class="u-container-layout u-similar-container u-container-layout-13">
+                        <h1 class="u-align-center u-text u-text-default u-text-palette-3-base u-title u-text-27" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">{{due_members|length}}</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

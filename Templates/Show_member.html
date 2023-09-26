@@ -1,0 +1,232 @@
+{% load static %}
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="MEMBER DETAILS, Do you want to remove member?">
+    <meta name="description" content="">
+    <title>Show_member</title>
+    <link rel="stylesheet" href="{%static 'nicepage.css' %}" media="screen">
+<link rel="stylesheet" href="{%static 'Show_member.css' %}" media="screen">
+    <script class="u-script" type="text/javascript" src="{%static 'jquery.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{%static 'nicepage.js' %}" defer=""></script>
+    <meta name="generator" content="Nicepage 5.16.3, nicepage.com">
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Gym_registration_form"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Show_member">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body class="u-body u-xl-mode" data-lang="en">
+    <section class="u-clearfix u-custom-color-2 u-section-1" id="sec-1248">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-subtitle u-text u-text-custom-color-4 u-text-default u-text-1">Member Details</h2>
+        <div class="u-border-3 u-border-grey-dark-1 u-line u-line-horizontal u-line-1"></div>
+        <div class="u-table u-table-responsive u-table-1">
+          <table class="u-table-entity">
+            <colgroup>
+              <col width="50%">
+              <col width="50%">
+            </colgroup>
+            <tbody class="u-table-alt-grey-80 u-table-body u-table-body-1">
+              <tr style="height: 54px;">
+                <td class="u-table-cell"><span class="u-file-icon u-icon u-text-white"><img src="{%static 'images/711239-88923138.png' %}" alt=""></span>&nbsp;Name: {{member.name}}
+                </td>
+                <td class="u-table-cell"><span class="u-file-icon u-icon u-text-white"><img src="{%static 'images/711239-88923138.png' %}" alt=""></span>&nbsp;Email: {{member.email}}
+                </td>
+              </tr>
+              <tr style="height: 52px;">
+                <td class="u-table-cell"><span class="u-file-icon u-icon u-text-white"><img src="{%static 'images/711239-88923138.png' %}" alt=""></span>&nbsp;Address: {{member.address}}
+                </td>
+                <td class="u-table-cell"><span class="u-file-icon u-icon u-text-white"><img src="{%static 'images/711239-88923138.png' %}" alt=""></span>&nbsp;Mobile No.: {{member.mobile}}<br>
+                </td>
+              </tr>
+              <tr style="height: 51px;">
+                <td class="u-table-cell"><span class="u-file-icon u-icon u-text-white"><img src="{%static 'images/711239-88923138.png' %}" alt=""></span>&nbsp;Height: {{member.height}} cm
+                </td>
+                <td class="u-table-cell"><span class="u-file-icon u-icon u-text-white"><img src="{%static 'images/711239-88923138.png' %}" alt=""></span>&nbsp;Weight: {{member.weight}} kg<br>
+                </td>
+              </tr>
+              <tr style="height: 54px;">
+                <td class="u-table-cell"><span class="u-file-icon u-icon u-text-white"><img src="{%static 'images/711239-88923138.png' %}" alt=""></span>&nbsp;Date of Birth: {{member.dob}}
+                </td>
+                <td class="u-table-cell"><span class="u-file-icon u-icon u-text-white"><img src="{%static 'images/711239-88923138.png' %}" alt=""></span>&nbsp;Gender: {{member.gender}}
+                </td>
+              </tr>
+              <tr style="height: 52px;">
+                <td class="u-table-cell"><span class="u-file-icon u-icon u-text-white"><img src="{%static 'images/711239-88923138.png' %}" alt=""></span>&nbsp;Age: {{member.age}} yrs
+                </td>
+                <td class="u-table-cell"><span class="u-file-icon u-icon u-text-white"><img src="{%static 'images/711239-88923138.png' %}" alt=""></span>&nbsp;Purpose: {{member.purpose}}
+                </td>
+              </tr>
+              <tr style="height: 59px;">
+                <td class="u-table-cell"><span class="u-file-icon u-icon u-text-white"><img src="{%static 'images/711239-88923138.png' %}" alt=""></span>&nbsp;Date of Join: {{member.date_of_join}}</td>
+                </td>
+                <td class="u-table-cell"><span class="u-file-icon u-icon u-text-white"><img src="{%static 'images/711239-88923138.png' %}" alt=""></span>&nbsp;Membership Plan: {{member.membership_plan}}<br>
+                </td>
+              </tr>
+              <tr style="height: 52px;">
+                <td class="u-table-cell"><span class="u-file-icon u-icon u-text-white"><img src="{%static 'images/711239-88923138.png' %}" alt=""></span>&nbsp;Total Fees: ₹{{member.total_fees}}<br>
+                </td>
+                <td class="u-table-cell"><span class="u-file-icon u-icon u-text-white"><img src="{%static 'images/711239-88923138.png' %}" alt=""></span>&nbsp;Last Fees Paid On: {{member.last_paid_date}}
+                </td>
+              </tr>
+              <tr style="height: 52px;">
+                <td class="u-table-cell"><span class="u-file-icon u-icon u-text-white"><img src="{%static 'images/711239-88923138.png' %}" alt=""></span>&nbsp;Fees Paid: ₹{{member.fees_paid}}
+                </td>
+                <td class="u-table-cell"><span class="u-file-icon u-icon u-text-white"><img src="{%static 'images/711239-88923138.png' %}" alt=""></span>&nbsp;Fees Due Date: {{member.fees_due_date}}
+                </td>
+              </tr>
+              <tr style="height: 41px;">
+                <td class="u-table-cell"><span class="u-file-icon u-icon u-text-white"><img src="{%static 'images/711239-88923138.png' %}" alt=""></span>&nbsp;Fees Remaining: ₹{{member.fees_remaining}}
+                </td>
+                <td class="u-table-cell"><span class="u-file-icon u-icon u-text-white"><img src="{%static 'images/711239-88923138.png' %}" alt=""></span>&nbsp;Personal Trainer: {{member.personal_trainer}}
+                </td>
+              </tr>
+              <tr style="height: 52px;">
+                <td class="u-table-cell"><span class="u-file-icon u-icon u-text-white"><img src="{%static 'images/711239-88923138.png' %}" alt=""></span>&nbsp;Batch Time: {{member.batch_time}}
+                </td>
+                <td class="u-table-cell"><span class="u-file-icon u-icon u-text-white"><img src="{%static 'images/711239-88923138.png' %}" alt=""></span>&nbsp;Name of Personal Trainer: {{member.personal_trainer_name}}
+                </td>
+              </tr>
+              <tr style="height: 52px;">
+                <td class="u-table-cell"></td>
+                <td class="u-table-cell"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <a href="{%url 'update_member' member.id %}" class="u-border-none u-btn u-button-style u-hover-palette-4-base u-palette-4-light-1 u-radius-6 u-btn-1"><span class="u-file-icon u-icon u-text-black u-icon-21"><img src="{%static 'images/9147804-68bbd2f6.png' %}" alt=""></span>&nbsp;Update Member
+        </a>
+        <a href="#carousel_65af" class="u-border-none u-btn u-button-style u-dialog-link u-hover-palette-2-base u-palette-2-light-1 u-radius-6 u-text-black u-text-hover-white u-btn-2"><span class="u-file-icon u-icon u-icon-22"><img src="{%static 'images/3096687.png' %}" alt=""></span>&nbsp;remove member
+        </a>
+      </div>
+      
+
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  <section class="u-align-center u-black u-clearfix u-container-style u-dialog-block u-opacity u-opacity-70 u-valign-middle u-dialog-section-6" id="carousel_65af" data-dialog-show-on="click">
+      <div class="u-align-center u-border-2 u-border-palette-4-base u-container-style u-dialog u-grey-80 u-radius-27 u-shape-round u-dialog-1">
+        <div class="u-container-layout u-container-layout-1">
+          <h2 class="u-align-center u-text u-text-default u-text-palette-4-base u-text-1">Do you want to remove <b>{{member.name}}</b>?</h2>
+          <a href="{%url 'delete_member' member.id %}" class="u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-2-light-1 u-btn-1">Yes</a>
+          <a href="{%url 'show_member' member.id %}" class="u-border-none u-btn u-button-style u-hover-palette-4-base u-palette-4-light-1 u-btn-2">No</a>
+        </div><button class="u-dialog-close-button u-icon u-text-body-alt-color u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 413.348 413.348" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-cdad"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 413.348 413.348" id="svg-cdad"><path d="m413.348 24.354-24.354-24.354-182.32 182.32-182.32-182.32-24.354 24.354 182.32 182.32-182.32 182.32 24.354 24.354 182.32-182.32 182.32 182.32 24.354-24.354-182.32-182.32z"></path></svg></button>
+      </div>
+    </section>
+    <style>.u-dialog-section-6 .u-dialog-1 {
+  width: 566px;
+  min-height: 183px;
+  height: auto;
+  box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
+  margin: 60px auto;
+}
+
+.u-dialog-section-6 .u-container-layout-1 {
+  padding: 39px 30px;
+}
+
+.u-dialog-section-6 .u-text-1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin: 1px 7px 0;
+}
+
+.u-dialog-section-6 .u-btn-1 {
+  background-image: none;
+  margin: 26px auto 0 99px;
+}
+
+.u-dialog-section-6 .u-btn-2 {
+  background-image: none;
+  margin: -48px 99px 0 auto;
+}
+
+.u-dialog-section-6 .u-icon-1 {
+  width: 25px;
+  height: 25px;
+  left: auto;
+  top: 16px;
+  position: absolute;
+  right: 16px;
+}
+
+@media (max-width: 1199px) {
+  .u-dialog-section-6 .u-dialog-1 {
+    width: 566px;
+  }
+
+  .u-dialog-section-6 .u-text-1 {
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+
+  .u-dialog-section-6 .u-btn-2 {
+    margin-top: -48px;
+    margin-right: 99px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-dialog-section-6 .u-container-layout-1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-dialog-section-6 .u-dialog-1 {
+    width: 540px;
+  }
+
+  .u-dialog-section-6 .u-text-1 {
+    font-size: 3.75rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-dialog-section-6 .u-dialog-1 {
+    width: 340px;
+  }
+
+  .u-dialog-section-6 .u-container-layout-1 {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .u-dialog-section-6 .u-text-1 {
+    font-size: 2.5rem;
+  }
+
+  .u-dialog-section-6 .u-btn-1 {
+    margin-left: 0;
+  }
+
+  .u-dialog-section-6 .u-btn-2 {
+    margin-right: 0;
+  }
+}</style>
+</body></html>

@@ -1,0 +1,272 @@
+{% load static %}
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="M​anage Trainers">
+    <meta name="description" content="">
+    <title>Manage_trainer</title>
+    <link rel="stylesheet" href="{%static 'nicepage.css' %}" media="screen">
+<link rel="stylesheet" href="{%static 'Manage_trainer.css' %}" media="screen">
+    <script class="u-script" type="text/javascript" src="{%static 'jquery.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{%static 'nicepage.js' %}" defer=""></script>
+    <meta name="generator" content="Nicepage 5.16.3, nicepage.com">
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+    
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Gym_registration_form"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Manage_trainer">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body class="u-body u-xl-mode" data-lang="en">
+    <section class="u-align-center u-clearfix u-custom-color-2 u-section-1" id="sec-0571">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-align-center u-custom-font u-font-montserrat u-subtitle u-text u-text-custom-color-4 u-text-default u-text-1">M​anage Trainers</h2>
+        <div class="u-expanded-width u-tabs u-tabs-1">
+          <ul class="u-tab-list u-unstyled" role="tablist">
+            <li class="u-tab-item" role="presentation">
+              <a class="active u-active-white u-button-style u-tab-link u-tab-link-1" id="link-tab-0da5" href="#tab-0da5" role="tab" aria-controls="tab-0da5" aria-selected="true">Add Trainer</a>
+            </li>
+            <li class="u-tab-item" role="presentation">
+              <a class="u-active-white u-button-style u-tab-link u-tab-link-2" id="link-tab-14b7" href="#tab-14b7" role="tab" aria-controls="tab-14b7" aria-selected="false">Edit Trainer</a>
+            </li>
+          </ul>
+          <div class="u-tab-content">
+            <div class="u-container-style u-custom-color-2 u-tab-active u-tab-pane u-tab-pane-1" id="tab-0da5" role="tabpanel" aria-labelledby="link-tab-0da5">
+              <div class="u-container-layout u-container-layout-1">
+                <div class="u-form u-form-1">
+                  <form method="POST" class="u-clearfix u-form-spacing-28 u-form-vertical u-inner-form" source="email" name="form" style="padding: 0px;">
+                    {% csrf_token %}
+                    <div class="u-form-group u-form-name u-form-partition-factor-2 u-label-top">
+                      <label for="name-c6a3" class="u-label u-text-custom-color-4 u-label-1">Name</label>
+                      <input type="text" placeholder="Enter your Name" id="name-c6a3" name="name" class="u-border-grey-75 u-custom-color-2 u-input u-input-rectangle u-radius-6 u-text-grey-5 u-input-1" required="">
+                    </div>
+                    <div class="u-form-email u-form-group u-form-partition-factor-2 u-label-top">
+                      <label for="email-c6a3" class="u-label u-text-custom-color-4 u-label-2">Email</label>
+                      <input type="email" placeholder="Enter a valid email address" id="email-c6a3" name="email" class="u-border-grey-75 u-custom-color-2 u-input u-input-rectangle u-radius-6 u-text-grey-5 u-input-2" required="">
+                    </div>
+                    <div class="u-form-address u-form-group u-form-partition-factor-2 u-label-top u-form-group-3">
+                      <label for="address-be2d" class="u-label u-text-custom-color-4 u-label-3">Address</label>
+                      <input type="text" placeholder="Enter your address" id="address-be2d" name="address" class="u-border-grey-75 u-custom-color-2 u-input u-input-rectangle u-radius-6 u-text-grey-5 u-input-3" required="">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-2 u-form-phone u-label-top u-form-group-4">
+                      <label for="phone-84d9" class="u-label u-text-custom-color-4 u-label-4">Mobile no</label>
+                      <input type="text" placeholder="Enter your mobile no" id="phone-84d9" name="mobile" class="u-border-grey-75 u-custom-color-2 u-input u-input-rectangle u-radius-6 u-text-grey-5 u-input-4" required="" maxlength="10">
+                    </div>
+                    <div class="u-form-date u-form-group u-form-partition-factor-2 u-label-top u-form-group-5">
+                      <label for="date-4da0" class="u-label u-text-custom-color-4 u-label-5">Date of Birth</label>
+                      <input type="text" readonly="readonly" placeholder="YYYY/MM/DD" id="date-4da0" name="dob" class="u-border-grey-75 u-custom-color-2 u-input u-input-rectangle u-radius-6 u-text-grey-5 u-input-5" required="" data-date-format="yyyy-mm-dd">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-2 u-form-select u-label-top u-form-group-6">
+                      <label for="select-0e23" class="u-label u-text-custom-color-4 u-label-6">Gender</label>
+                      <div class="u-form-select-wrapper">
+                        <select id="select-0e23" name="gender" class="u-border-grey-75 u-custom-color-2 u-input u-input-rectangle u-radius-6 u-text-grey-5 u-input-6" required="required">
+                          <option value="male" data-calc="male">Male</option>
+                          <option value="female" data-calc="female">Female</option>
+                        </select>
+                        <svg class="u-caret u-caret-svg u-text-grey-5" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+                      </div>
+                    </div>
+                    <div class="u-form-date u-form-group u-label-top u-form-group-7">
+                      <label for="date-5a57" class="u-label u-text-custom-color-4 u-label-7">Date of Join</label>
+                      <input type="text" readonly="readonly" placeholder="MM/DD/YYYY" id="date-5a57" name="join_date" class="u-border-grey-75 u-custom-color-2 u-input u-input-rectangle u-radius-6 u-text-grey-5 u-input-7" required="" data-date-format="yyyy-mm-dd">
+                    </div>
+                    <div class="u-align-center u-form-group u-form-submit u-label-top">
+                      <label class="u-form-control-hidden u-label u-text-custom-color-4 u-label-8"></label>
+                      <input type="submit" value="submit" class="u-form-control-hidden">
+                        <a id = "addTrainerButton" href="#" class="u-border-2 u-border-active-palette-2-base u-border-grey-75 u-border-hover-palette-1-base u-btn u-btn-submit u-button-style u-text-palette-1-base u-btn-1">Submit</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="u-align-left u-container-style u-custom-color-2 u-tab-pane u-tab-pane-2" id="tab-14b7" role="tabpanel" aria-labelledby="link-tab-14b7">
+              <div class="u-container-layout u-container-layout-2">
+                <div class="u-table u-table-responsive u-table-1">
+                  <table class="u-table-entity">
+                    <colgroup>
+                      <col width="6.5%">
+                      <col width="22%">
+                      <col width="14.3%">
+                      <col width="10.4%">
+                      <col width="8.9%">
+                      <col width="22.9%">
+                      <col width="15.1%">
+                    </colgroup>
+                    <thead class="u-grey-70 u-table-header u-table-header-1">
+                      <tr style="height: 39px;">
+                        <th class="u-border-1 u-border-palette-4-base u-table-cell">ID</th>
+                        <th class="u-border-1 u-border-palette-4-base u-table-cell">Name</th>
+                        <th class="u-border-1 u-border-palette-4-base u-table-cell">Mobile No</th>
+                        <th class="u-border-1 u-border-palette-4-base u-table-cell">Age</th>
+                        <th class="u-border-1 u-border-palette-4-base u-table-cell">Gender</th>
+                        <th class="u-border-1 u-border-palette-4-base u-table-cell">Date of Join</th>
+                        <th class="u-border-1 u-border-palette-4-base u-table-cell">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody class="u-table-body">
+                      {% for trainer in trainers %}
+                        <div id="{{trainer.id}}">
+                          <tr style="height: 75px;">
+                            <td class="u-border-1 u-border-grey-30 u-first-column u-table-cell u-table-cell-8">{{trainer.id}}</td>
+                            <td class="u-border-1 u-border-grey-30 u-table-cell">{{trainer.name}}</td>
+                            <td class="u-border-1 u-border-grey-30 u-table-cell">{{trainer.mobile}}</td>
+                            <td class="u-border-1 u-border-grey-30 u-table-cell">{{trainer.age}}</td>
+                            <td class="u-border-1 u-border-grey-30 u-table-cell">{{trainer.gender}}</td>
+                            <td class="u-border-1 u-border-grey-30 u-table-cell">{{trainer.date_of_join}}</td>
+                            <td class="u-border-1 u-border-grey-30 u-table-cell"><a id="deleteTrainerButton" href="{%url 'delete_trainer' trainer.id%}" class="u-border-none u-btn u-button-style u-hover-palette-2-dark-1 u-palette-2-light-1 u-radius-6 u-text-black u-text-hover-black u-btn-2" title="Delete Trainer"><span class="u-file-icon u-icon u-text-black"><img src="{%static 'images/3096687-1e23c371.png' %}" alt=""></span>&nbsp;Delete
+                            </td>
+                          </tr>
+                        </div>
+                      {% endfor %}
+                    </tbody>
+                  </table>
+                </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function handleButtonClick1(event) {
+        
+        event.preventDefault(); // Prevent the form from submitting (optional)
+    
+        // Your custom logic here
+        alert('Trainer deleted successfully!!!');
+      }
+      document.getElementById('deleteTrainerButton').onclick = handleButtonClick1;
+      // Attach the function to the submit button's click event
+      
+    </script>
+    <script>
+      function handleButtonClick(event) {
+        
+        event.preventDefault(); // Prevent the form from submitting (optional)
+    
+        // Your custom logic here
+        alert('Trainer added successfully!!!');
+      }
+      document.getElementById('addTrainerButton').onclick = handleButtonClick;
+      // Attach the function to the submit button's click event
+      
+    </script>
+    {% comment %} <section class="u-align-center u-black u-clearfix u-container-style u-dialog-block u-opacity u-opacity-70 u-valign-middle u-dialog-section-6" id="carousel_66af" data-dialog-show-on="click">
+      <div class="u-align-center u-border-2 u-border-palette-4-base u-container-style u-dialog u-grey-80 u-radius-27 u-shape-round u-dialog-1">
+        <div class="u-container-layout u-container-layout-1">
+          <h2 class="u-align-center u-text u-text-default u-text-palette-4-base u-text-1">Do you want to remove <b>Trainer name</b>?</h2>
+          <a href="#" class="u-border-none u-btn u-button-style u-hover-palette-2-base u-palette-2-light-1 u-btn-1">Yes</a>
+          <a href="#" class="u-border-none u-btn u-button-style u-hover-palette-4-base u-palette-4-light-1 u-btn-2">No</a>
+        </div><button class="u-dialog-close-button u-icon u-text-body-alt-color u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 413.348 413.348" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-cdad"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 413.348 413.348" id="svg-cdad"><path d="m413.348 24.354-24.354-24.354-182.32 182.32-182.32-182.32-24.354 24.354 182.32 182.32-182.32 182.32 24.354 24.354 182.32-182.32 182.32 182.32 24.354-24.354-182.32-182.32z"></path></svg></button>
+      </div>
+    </section> {% endcomment %}
+    <style>.u-dialog-section-6 .u-dialog-1 {
+      width: 566px;
+      min-height: 183px;
+      height: auto;
+      box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
+      margin: 60px auto;
+    }
+    
+    .u-dialog-section-6 .u-container-layout-1 {
+      padding: 39px 30px;
+    }
+    
+    .u-dialog-section-6 .u-text-1 {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin: 1px 7px 0;
+    }
+    
+    .u-dialog-section-6 .u-btn-1 {
+      background-image: none;
+      margin: 26px auto 0 99px;
+    }
+    
+    .u-dialog-section-6 .u-btn-2 {
+      background-image: none;
+      margin: -48px 99px 0 auto;
+    }
+    
+    .u-dialog-section-6 .u-icon-1 {
+      width: 25px;
+      height: 25px;
+      left: auto;
+      top: 16px;
+      position: absolute;
+      right: 16px;
+    }
+    
+    @media (max-width: 1199px) {
+      .u-dialog-section-6 .u-dialog-1 {
+        width: 566px;
+      }
+    
+      .u-dialog-section-6 .u-text-1 {
+        margin-left: 7px;
+        margin-right: 7px;
+      }
+    
+      .u-dialog-section-6 .u-btn-2 {
+        margin-top: -48px;
+        margin-right: 99px;
+      }
+    }
+    
+    @media (max-width: 991px) {
+      .u-dialog-section-6 .u-container-layout-1 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+    }
+    
+    @media (max-width: 767px) {
+      .u-dialog-section-6 .u-dialog-1 {
+        width: 540px;
+      }
+    
+      .u-dialog-section-6 .u-text-1 {
+        font-size: 3.75rem;
+      }
+    }
+    
+    @media (max-width: 575px) {
+      .u-dialog-section-6 .u-dialog-1 {
+        width: 340px;
+      }
+    
+      .u-dialog-section-6 .u-container-layout-1 {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+    
+      .u-dialog-section-6 .u-text-1 {
+        font-size: 2.5rem;
+      }
+    
+      .u-dialog-section-6 .u-btn-1 {
+        margin-left: 0;
+      }
+    
+      .u-dialog-section-6 .u-btn-2 {
+        margin-right: 0;
+      }
+    }
+  </body>
+</html>
