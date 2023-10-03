@@ -1,0 +1,305 @@
+ .u-section-1 {
+  background-image: none;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 1015px;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 66px auto 0;
+}
+
+.u-section-1 .u-btn-1 {
+  border-style: solid;
+  margin: -50px auto 0 20px;
+}
+
+.u-section-1 .u-group-1 {
+  width: 800px;
+  min-height: 1025px;
+  height: auto;
+  margin: 30px auto 0;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 30px 0;
+}
+
+.u-section-1 .u-form-1 {
+  height: 964px;
+  --thumb-color: #478ac9;
+  --thumb-hover-color: #77aad9;
+  --track-color: #c0c0c0;
+  --track-active-color: #478ac9;
+  --number-width: 300px;
+  --checkbox-checked-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+  margin: 0 109px 0 66px;
+}
+
+.u-section-1 .u-form-group-1 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-label-1 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-input-1 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-label-2 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-input-2 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-form-group-4 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-label-3 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-input-3 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-form-group-5 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-label-4 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-input-4 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-form-group-6 {
+  --progress: 0%;
+}
+
+.u-section-1 .u-label-5 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-input-5 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-form-group-7 {
+  --progress: 0%;
+}
+
+.u-section-1 .u-label-6 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-input-6 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-form-group-8 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-label-7 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-input-7 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-form-group-9 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-label-8 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-input-8 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-form-group-10 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-label-9 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-input-9 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-form-group-11 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-label-10 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-input-10 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-form-group-12 {
+  --progress: 0%;
+}
+
+.u-section-1 .u-label-11 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-input-11 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-form-group-13 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-label-12 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-input-12 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-form-group-14 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-label-13 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-input-13 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-form-group-15 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-label-14 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-input-14 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-form-group-16 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-label-15 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-label-16 {
+  width: 100px;
+  font-weight: 700;
+}
+
+.u-section-1 .u-btn-2 {
+  font-size: 1.125rem;
+  border-style: solid;
+  width: 75%;
+  padding: 10px 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-btn-1 {
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-group-1 {
+    height: auto;
+  }
+
+  .u-section-1 .u-form-1 {
+    width: 670px;
+  }
+
+  .u-section-1 .u-form-group-16 {
+    --progress: 0%;
+  }
+
+  .u-section-1 .u-btn-2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 16px 56px 17px 55px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-group-1 {
+    width: 720px;
+  }
+
+  .u-section-1 .u-form-1 {
+    width: 660px;
+    margin-left: 26px;
+    margin-right: 69px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-group-1 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-form-1 {
+    width: 520px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-group-1 {
+    margin-bottom: -7px;
+    margin-right: initial;
+    margin-left: initial;
+    width: auto;
+  }
+
+  .u-section-1 .u-form-1 {
+    width: 320px;
+  }
+}
+
+
+/* Define a CSS class to style your button */
+.custom-button {
+  background-color: #007bff; /* Background color of the button */
+  color: #ffffff; /* Text color of the button (white in this example) */
+  font-size: 16px; /* Font size of the text */
+  padding: 10px 20px; /* Padding inside the button */
+  border: none; /* Remove button border */
+  cursor: pointer; /* Change cursor to pointer when hovering */
+}
+
+/* Define additional styles for when the button is hovered or active (optional) */
+.custom-button:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+.custom-button:active {
+  background-color: #003d80; /* Change background color when clicked */
+}
